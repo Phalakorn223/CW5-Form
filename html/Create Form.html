@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ฟอร์มสมัครเรียนต่อระดับปริญญาตรี</h1>
+
+    <h2>ข้อมูลส่วนตัว</h2>
+    <h3>คำนำหน้าชื่อ</h3>
+    <select name="prefix" id="prefix">
+      <option value="">-- กรุณาเลือก --</option>
+      <option value="mr">นาย</option>
+      <option value="ms">นางสาว</option>
+      <option value="mrs">นาง</option>
+    </select>
+    <input type="text" name="fname" id="fname" placeholder="ชื่อ" />
+    <input type="text" name="lname" id="lname" placeholder="นามสกุล" />
+
+    <h4>เลขประจำตัวประชาชน (13 หลัก)</h4>
+    <input
+      type="text"
+      maxlength="13"
+      name="idcard"
+      id="idcard"
+      placeholder="กรุณากรอกเลขประจำตัวประชาชน"
+    />
+
+    <h4>วันเดือนปีเกิด</h4>
+    <input type="date" name="birthdate" id="birthdate" />
+
+    <h4>อายุ (ปี)</h4>
+    <input type="number" name="age" id="age" placeholder="กรุณากรอกอายุ" />
+
+    <h4>เพศ</h4>
+    <label><input type="radio" name="gender" id="gender" /> ชาย </label>
+    <label><input type="radio" name="gender" id="gender" /> หญิง </label>
+    <label><input type="radio" name="gender" id="gender" /> ไม่ระบุ </label>
+
+    <h4>สัญชาติ</h4>
+    <input type="text" name="national" id="national" placeholder="กรุณากรอกสัญชาติ" />
+
+    <h4>เชื้อชาติ</h4>
+    <input type="text" name="ethnicity" id="ethnicity" placeholder="กรุณากรอกเชื้อชาติ" />
+
+    <h4>ศาสนา</h4>
+    <input type="text" name="religion" id="religion" placeholder="กรุณากรอกศาสนา" />
+
+    <h4>เบอร์โทรศัพท์</h4>
+    <input type="tel" maxlength="10" name="phone" id="phone" placeholder="กรุณากรอกเบอร์โทรศัพท์" />
+
+    <h4>อีเมล</h4>
+    <input type="email" name="email" id="email" placeholder="กรุณากรอกอีเมล" />
+
+    <h4>ที่อยู่</h4>
+    <textarea name="address" id="address" cols="30" rows="5" placeholder="กรุณากรอกที่อยู่"></textarea>
+    
+
+    <h2>ข้อมูลการสมัคร</h2>
+    <h4>วุฒิที่จบมา</h4>
+    <label for=""><input type="radio">ม.6</label>
+    <label for=""><input type="radio">ปวช.</label>
+    <label for=""><input type="radio">ปวส.</label>
+
+    <h4>ชื่อสถานศึกษาที่จบ</h4>
+    <input type="text" name="school" id="school" placeholder="กรุณากรอกชื่อสถานศึกษาที่จบ" />
+
+    <h4>ปีที่จบ</h4>
+    <input type="number" name="graduation_year" id="graduation_year" placeholder="กรุณากรอกปีที่จบ" />
+
+    <h4>เกรดเฉลี่ย (GPA)</h4>
+    <input type="number" step="0.01" name="gpa" id="gpa" placeholder="กรุณากรอกเกรดเฉลี่ย (GPA)" />
+
+    <h4>สาขาที่สมัคร</h4>
+    <select name="department" id="department">
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="IT">IT</option>
+        <option value="ITI">ITI</option>
+        <option value="INE">INE</option>
+        <option value="INET">INET</option>
+    </select>
+
+    <h4>เหตุผลที่เลือกสาขา</h4>
+    <textarea name="reason" id="reason" cols="30" rows="5" placeholder="กรุณากรอกเหตุผลที่เลือกสาขา"></textarea>
+    
+    
+    <h2>ประวัติการศึกษา</h2>
+    <h4>ระดับการศึกษา</h4>
+    <h4>ประถมศึกษา</h4>
+    <label>สถานศึกษา: <input type="text" name="primary_school"></label><br>
+    <label>จังหวัด: <input type="text" name="primary_province"></label><br>
+    <label>ปีที่เข้า: <input type="number" name="primary_year_start"></label><br>
+    <label>ปีที่จบ: <input type="number" name="primary_year_end"></label><br>
+    <label>วุฒิที่ได้รับ: <input type="text" name="primary_degree"></label><br>
+    <label>GPA: <input type="number" step="0.01" name="primary_gpa"></label><br><br>
+
+    <h4>มัธยมต้น</h4>
+    <label>สถานศึกษา: <input type="text" name="junior_school" class="edu-input"></label><br>
+    <label>จังหวัด: <input type="text" name="junior_province" class="edu-input"></label><br>
+    <label>ปีที่เข้า: <input type="number" name="junior_year_start" class="edu-input"></label><br>
+    <label>ปีที่จบ: <input type="number" name="junior_year_end" class="edu-input"></label><br>
+    <label>วุฒิที่ได้รับ: <input type="text" name="junior_degree" class="edu-input"></label><br>
+    <label>GPA: <input type="number" step="0.01" name="junior_gpa" class="edu-input"></label><br><br>
+
+    <h4>มัธยมปลาย/ปวช./ปวส.</h4>
+    <label>สถานศึกษา: <input type="text" name="senior_school" class="edu-input"></label><br>
+    <label>จังหวัด: <input type="text" name="senior_province" class="edu-input"></label><br>
+    <label>ปีที่เข้า: <input type="number" name="senior_year_start" class="edu-input"></label><br>
+    <label>ปีที่จบ: <input type="number" name="senior_year_end" class="edu-input"></label><br>
+    <label>วุฒิที่ได้รับ: <input type="text" name="senior_degree" class="edu-input"></label><br>
+    <label>GPA: <input type="number" step="0.01" name="senior_gpa" class="edu-input"></label><br><br>
+
+
+    <h2>การแนบเอกสาร</h2>
+    <h4>แนบสำเนาบัตรประชาชน</h4>
+    <input type="file" name="id_card_copy" id="id_card_copy" />
+
+    <h4>แนบไฟล์วุฒิการศึกษา (เช่น ปพ.1)</h4>
+    <input type="file" name="education_certificate" id="education_certificate" />
+
+
+    <h2>ยืนยันและส่งฟอร์ม</h2>
+    <label for="">
+      <input type="checkbox" name="confirm" id="confirm" />
+      ยอมรับเงื่อนไข
+    </label>
+    <br/>
+    <br/>
+    <button type="submit">ส่งฟอร์ม</button>
+    <button type="reset">ล้างข้อมูล</button>
+    
+  </body>
+</html>
